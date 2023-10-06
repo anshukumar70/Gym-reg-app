@@ -1,0 +1,73 @@
+<div class="container">
+    <mat-card *ngIf="userDetails" class="example-card">
+
+
+
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{userDetails.FirstName}} {{userDetails.LastName}}</mat-card-title>
+            <mat-card-subtitle>{{userDetails.Email}}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <mat-list>
+                <mat-list-item>
+                    <div matLine>
+                        Mobile No.
+                        <button mat-button>{{userDetails.Mobile}}</button>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <div matLine>
+                        Gender
+                        <button mat-button>{{userDetails.Gender}}</button>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <div matLine>
+                        Packege
+                        <button mat-button>{{userDetails.packeges}}</button>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <div matLine>
+                        BMI
+                        <button mat-button>{{userDetails.Bmi}}</button>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <div matLine>
+                        BMI Result
+                        <button mat-button>{{userDetails.BmiResult}}</button>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <div matLine>
+                        Trainer Option
+                        <button mat-button>{{userDetails.option}}</button>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <div matLine>
+                        Goals
+                        <button mat-button>
+                            <mat-chip-listbox>
+                                <ng-container *ngFor="let row  of userDetails.ImportantList">
+                                    <mat-chip-option selected>{{row}}</mat-chip-option>
+                                </ng-container>
+                            </mat-chip-listbox>
+                        </button>
+                    </div>
+                </mat-list-item>
+
+            </mat-list>
+        </mat-card-content>
+
+    </mat-card>
+</div>

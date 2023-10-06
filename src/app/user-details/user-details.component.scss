@@ -1,0 +1,27 @@
+
+.example-card {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 5% ;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .example-header-image {
+    background-image: url(
+      '../../assets/[CITYPNG.COM]HD\ Profile\ User\ Round\ Blue\ Icon\ Symbol\ Transparent\ PNG\ -\ 1074x1074.png');
+    background-size: cover;
+
+  }
+
+  .mat-mdc-card-header{
+
+position: relative;
+left: 35%;
+
+  }
