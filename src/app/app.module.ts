@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgToastModule } from 'ng-angular-popup';
 import { NgConfirmModule } from 'ng-confirm-box';
 import { ToastrModule } from 'ngx-toastr';
+import { AngularSignaturePadModule } from '@almothafar/angular-signature-pad';
 
 
 
@@ -38,6 +39,7 @@ import { ToastrModule } from 'ngx-toastr';
     HttpClientModule,
     NgToastModule,
     NgConfirmModule,
+    AngularSignaturePadModule,
     
     
     ToastrModule.forRoot({

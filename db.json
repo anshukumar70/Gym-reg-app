@@ -1,27 +1,6 @@
 {
   "enquiry": [
     {
-      "FirstName": "anshu",
-      "LastName": "kumar",
-      "Email": "anshuarock@gmail.com",
-      "Mobile": "7037527170",
-      "Weight": 100,
-      "Height": 1.1,
-      "Bmi": 0.8264462809917354,
-      "BmiResult": "UnderWeight",
-      "trainerOpt": "no",
-      "Gender": "Male",
-      "packeges": "Monthly",
-      "ImportantList": [
-        "Energy and Endurance",
-        "Building Lean  Muscle",
-        "Healthier Digestive System"
-      ],
-      "option": "Yes",
-      "Date": "2023-07-05T18:30:00.000Z",
-      "id": 3
-    },
-    {
       "FirstName": "jack",
       "LastName": "ryan",
       "Email": "jack@gmail.com",

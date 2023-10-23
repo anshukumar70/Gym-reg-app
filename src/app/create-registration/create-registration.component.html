@@ -144,4 +144,25 @@
                (click)="update()"> Update</button>
 
      </form>
+
+
+     <div class="btns" *ngIf="isDrawn">
+          <button (click)="clearPad()">clear </button>
+          <button>undo </button>
+          <button>redo </button>
+          <button (click)="savePng()" >save as png </button>
+          <button (click)="saveJpeg()" >save as JPEG </button>
+          <button (click)="savesvg()">save as SVG </button>
+     </div>
+
+     <signature-pad #signature
+      [options]="signaturePadOption"
+      (drawStart)="drawComplete($event)"
+      (drawEnd)="drawStart($event)"
+     
+     >
+
+     <!-- <signature-pad #signature [options]="signaturePadOptions" (click)="drawStart($event)" (click)="drawComplete($event)"></signature-pad> -->
+
+     </signature-pad>
 </div>
